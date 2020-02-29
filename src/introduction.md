@@ -6,13 +6,13 @@ git clone https://github.com/bCom5/mdbook-notes-template.git
 ```
 This downloads the folder.
 
-Step 2. Edit `first_time.sh` for new GitHub repo. Run `sh first_time.sh`
+Step 2. Change the folder name
 
-Step 3. Rename directory. Rename title in `book.toml`.
+Step 3. Run `python first_time.py`
 
-Step 4. Change location in `deploy.sh`.
+Step 4. Use `mdbook serve` have fun!
 
-Step 5. Run `mdbook serve` and have fun!
+Step 5. When want to deploy, cancel out of `mdbook serve`, and run `python deploy.py`
 
 Great tools!
 * [Imgur Screenshot](https://github.com/jomo/imgur-screenshot)
