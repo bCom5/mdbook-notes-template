@@ -30,4 +30,4 @@ subprocess.run('git worktree add release/ -b gh-pages', shell=True)
 subprocess.run('git checkout master', shell=True)
 
 settings = origin.replace('.git', '/settings')
-print(f'When deployed remember to set to https at {settings}')
+print(f'\nWhen deployed remember to set to https at {settings}')

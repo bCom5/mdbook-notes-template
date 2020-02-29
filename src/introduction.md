@@ -23,3 +23,4 @@ alias i='imgur-screenshot.sh -o false; {echo -n '\''\n\n![]('\''; pbpaste; echo 
 alias imgur=imgur-screenshot.sh
 alias ii="imgur-screenshot.sh -o false; {echo -n '![]('; pbpaste; echo -n ')\n'} | pbcopy"
 ```
+
