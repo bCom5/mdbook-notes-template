@@ -1,0 +1,10 @@
+[book]
+authors = ["Brian Liao"]
+language = "en"
+multilingual = false
+src = "src"
+title = "MdBook Notes Template"
+
+[output.html]
+default-theme = "ayu"
+mathjax-support = true
