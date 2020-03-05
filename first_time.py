@@ -16,7 +16,7 @@ mathjax-support = true
 with open('book.toml', 'w') as f:
     f.write(lines)
 
-origin = input('What is the Github origin to add?\n')
+origin = input('What is the Github origin to add? (https://github.com/new)\n')
 subprocess.run('rm -rf .git', shell=True)
 subprocess.run('rm -rf release', shell=True)
 subprocess.run('git init', shell=True)
