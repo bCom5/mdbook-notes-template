@@ -1,5 +1,4 @@
 import subprocess
 
-line = 'open -a \"/Applications/Google Chrome.app\" {}'.format('http://localhost:3000/')
-subprocess.run(line, shell=True)
-
+line_fmt = 'open -a \"/Applications/Google Chrome.app\" {}'
+subprocess.run(line_fmt.format('http://localhost:3000/'), shell=True)
