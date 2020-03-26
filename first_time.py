@@ -16,6 +16,19 @@ mathjax-support = true
 with open('book.toml', 'w') as f:
     f.write(lines)
 
+port = input('What port to use when serving mdbooks?\n')
+
+quick_start = f'''import subprocess
+line_fmt = 'open -a \"/Applications/Google Chrome.app\" {}'
+subprocess.run(line_fmt.format(f'http://localhost:{port}/'), shell=True)
+subprocess.run(f'subl .', shell=True)
+subprocess.run(f'subl src/SUMMARY.md', shell=True)
+subprocess.run(f'mdbook serve -p {port}', shell=True)
+'''
+
+with open('quick_start.py', 'w') as f:
+    f.write(lines)
+
 origin = input('What is the Github origin to add? ( https://github.com/new )\n')
 subprocess.run('rm -rf .git', shell=True)
 subprocess.run('rm -rf release', shell=True)
