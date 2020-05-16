@@ -18,13 +18,16 @@ with open('book.toml', 'w') as f:
 
 port = input('What port to use when serving mdbooks?\n')
 
-quick_start = f'''import subprocess
+quick_start = '''import subprocess
 line_fmt = 'open -a \"/Applications/Google Chrome.app\" {}'
+'''
+quick_start += f'''
 subprocess.run(line_fmt.format(f'http://localhost:{port}/'), shell=True)
 subprocess.run(f'subl .', shell=True)
 subprocess.run(f'subl src/SUMMARY.md', shell=True)
 subprocess.run(f'mdbook serve -p {port}', shell=True)
 '''
+
 
 with open('quick_start.py', 'w') as f:
     f.write(lines)
