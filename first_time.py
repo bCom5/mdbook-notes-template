@@ -28,9 +28,8 @@ subprocess.run(f'subl src/SUMMARY.md', shell=True)
 subprocess.run(f'mdbook serve -p {port}', shell=True)
 '''
 
-
 with open('quick_start.py', 'w') as f:
-    f.write(lines)
+    f.write(quick_start)
 
 origin = input('What is the Github origin to add? ( https://github.com/new )\n')
 subprocess.run('rm -rf .git', shell=True)
