@@ -25,7 +25,7 @@ quick_start += f'''
 subprocess.run(line_fmt.format(f'http://localhost:{port}/'), shell=True)
 subprocess.run(f'subl .', shell=True)
 subprocess.run(f'subl src/SUMMARY.md', shell=True)
-subprocess.run(f'mdbook serve -p {port}', shell=True)
+subprocess.run(f'mdbook serve -p {port} -w {port + 1}', shell=True)
 '''
 
 with open('quick_start.py', 'w') as f:
